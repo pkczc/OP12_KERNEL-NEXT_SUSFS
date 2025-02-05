@@ -50,6 +50,7 @@ jobs:
         sed -i 's/export REPACK_IMG=true/export REPACK_IMG=false/Ig' kernel_platform/oplus/build/oplus_setup.sh
         sed -i 's/ -dirty$//' kernel_platform/common/scripts/setlocalversion
         sed -i 's/ -dirty$//' kernel_platform/common/scripts/Makefile.modpost
+         sed -i 's/ -dirty//g' kernel_platform/msm-kernel/scripts/setlocalversion
      #  sed -i 's/EXTRAVERSION =/EXTRAVERSION =-PKCZC/I' kernel_platform/common/Makefile
         
 
